@@ -1,7 +1,5 @@
-
 <!DOCTYPE html>
 <html>
-<!-- Shajedul Hassan Arman -->
 <head>
     <title>BMI Calculator | VATRA</title>
     <link rel="stylesheet" href="style.css">
@@ -34,10 +32,10 @@
 
     <div class="form mt-2 <?php if(isset($_GET['clear'])) { echo 'hide'; }  ?>">
         <?php
-        if (isset($_GET['hitung'])) { // var 1
+        if (isset($_GET['hitung'])) { 
             $nama = $_GET['nama'];
-            $berat = $_GET['berat']; // var 2
-            $tinggi = $_GET['tinggi']; // var 3
+            $berat = $_GET['berat']; 
+            $tinggi = $_GET['tinggi'];
            if(empty($nama) && empty($berat) && empty($tinggi)) {
                 echo '<span class="error-text">Jangan biarkan kosong! </span>';
             }else {
